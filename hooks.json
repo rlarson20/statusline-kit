@@ -1,0 +1,45 @@
+{
+  "statusline-telemetry": {
+    "enabled": true,
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "node ./scripts/hook-telemetry.mjs SessionStart",
+        "timeout": 5
+      }
+    ],
+    "PreInvocation": [
+      {
+        "type": "command",
+        "command": "node ./scripts/hook-telemetry.mjs PreInvocation",
+        "timeout": 5
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ./scripts/hook-telemetry.mjs PostToolUse",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "PostInvocation": [
+      {
+        "type": "command",
+        "command": "node ./scripts/hook-telemetry.mjs PostInvocation",
+        "timeout": 5
+      }
+    ],
+    "Stop": [
+      {
+        "type": "command",
+        "command": "node ./scripts/hook-telemetry.mjs Stop",
+        "timeout": 5
+      }
+    ]
+  }
+}

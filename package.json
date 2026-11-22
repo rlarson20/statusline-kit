@@ -1,0 +1,41 @@
+{
+  "name": "statusline-kit",
+  "version": "1.0.0",
+  "description": "Customizable, tracker-extensible status line plugin for Google Antigravity CLI with a built-in usage tracker.",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "bin": {
+    "statusline-kit": "./scripts/statusline.mjs"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./src/index.ts"
+    }
+  },
+  "files": [
+    "plugin.json",
+    "mcp_config.json",
+    "hooks.json",
+    "README.md",
+    "assets/",
+    "src/",
+    "scripts/",
+    "skills/",
+    "examples/"
+  ],
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test tests/*.test.ts",
+    "preview": "node scripts/statusline.mjs --preview"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.8.0"
+  }
+}

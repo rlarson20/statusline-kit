@@ -1,0 +1,30 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "statusline-kit",
+  "displayName": "Statusline Kit",
+  "version": "1.0.0",
+  "description": "Customizable, tracker-extensible status line HUD for the Antigravity App (Side Panel, Full Page, Inline) and CLI with a built-in usage tracker.",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Open the Statusline HUD in the side panel",
+    "Customize the usage tracker options and theme",
+    "Add a new custom tracker to my status line"
+  ],
+  "author": {
+    "name": "rlarson20",
+    "url": "https://github.com/rlarson20"
+  },
+  "homepage": "https://github.com/rlarson20/statusline-kit",
+  "repository": "https://github.com/rlarson20/statusline-kit",
+  "license": "MIT",
+  "keywords": [
+    "statusline",
+    "status-bar",
+    "hud",
+    "mcp-app",
+    "usage",
+    "tokens",
+    "cost",
+    "trackers"
+  ]
+}
